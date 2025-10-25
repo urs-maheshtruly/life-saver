@@ -1,0 +1,81 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialog-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .dialog-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .dialog-message {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .dialog-actions {
+    margin-top: 20px;
+  }
+  
+  .dialog-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dialog-button.confirm {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .dialog-button.cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .dialog-button:hover {
+    opacity: 0.9;
+  }
+
+  .pin-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .pin-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .pin-input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }

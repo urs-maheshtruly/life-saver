@@ -1,0 +1,158 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 95%;
+  max-width: 1300px;
+  height: 80px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(145deg, #4b98f7, #68c3e4);
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Floating Effect */
+.navbar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.container.dark .navbar {
+  background: linear-gradient(145deg, #2d3a42, #3c6166);
+}
+
+/* Navigation Links as Icons */
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5aa3e4;
+  transform: scale(1.2);
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 50px;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.search-txt {
+  padding: 5px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.toggle-icon:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Sign-In Button */
+.navbar-sign-in-button {
+  background: linear-gradient(145deg, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-sign-in-button:hover {
+  background: linear-gradient(145deg, #fc8d73, #f7a07b);
+  transform: scale(1.1);
+}
+
+/* Login Button (Now Inside Navbar) */
+.Login {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #232526, #414345);
+  color: rgb(189, 189, 189);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Login:hover {
+  background: linear-gradient(145deg, #3b3f40, #2b2e2f);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .search-box {
+    margin-top: 10px;
+  }
+}

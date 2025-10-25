@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s; /* Add transition for background and text color */
+}
+
+body.light {
+    background-color: #FFFFFF; /* Light mode background */
+    color: #333333; /* Light mode primary text color */
+}
+
+body.dark {
+    background-color: #5b5555; /* Dark mode background */
+    color: #FFFFFF; /* Dark mode primary text color */
+}
+
+.container {
+    transition: background-color 0.5s, color 0.5s; /* Add transition for container background and text color */
+}
+
+.container.light {
+    background-color: #FFFFFF; /* Light mode background */
+    color: #333333; /* Light mode primary text color */
+}
+
+.container.dark {
+    background-color: #323232; /* Dark mode background */
+    color: #FFFFFF; /* Dark mode primary text color */
+}
+.navbar.container.light {
+    background-color: #FFFFFF; /* Light mode background */
+    color: #333333; /* Light mode primary text color */
+}
