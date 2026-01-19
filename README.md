@@ -107,7 +107,7 @@ LifeSaver/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/LifeSaver.git
+git clone https://github.com/urs-maheshtruly/LifeSaver.git
 ```
 
 ---
